@@ -20,5 +20,29 @@ namespace BlogProject
 
             base.OnConfiguring(optionsBuilder);
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Blog>().HasData(
+                new Blog()
+                {
+                    Id = 1,
+                    Name = "Dream Log",
+                    Image = "/img/dreaming.jpg"
+                },
+                new Blog()
+                {
+                    Id = 2,
+                    Name = "Ziplining",
+                    Image = "/img/zipline.jpg"
+                },
+                new Blog()
+                {
+                    Id = 3,
+                    Name = "Exotic Pets",
+                    Image = "/img/lizard.jpg"
+                }
+            );
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
