@@ -9,6 +9,7 @@ namespace BlogProject.Repositories
     public class BlogRepository : IRepository<Blog>
     {
         private BlogContext db;
+
         public BlogRepository(BlogContext db)
         {
             this.db = db;
@@ -24,6 +25,11 @@ namespace BlogProject.Repositories
         public Blog GetById(int id)
         {
             return db.Blogs.Single(b => b.Id == id);
+        }
+        public void Create(Blog blog)
+        {
+            db.Blogs.Add(blog);
+            db.SaveChanges();
         }
     }
 }
