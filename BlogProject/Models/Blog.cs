@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,9 +8,9 @@ namespace BlogProject.Models
 {
     public class Blog
     {
-        string Name { get; set; }
-        int Id { get; set; }
-        string Image { get; set; }
+        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Image { get; set; }
 
         public Blog()
         {
