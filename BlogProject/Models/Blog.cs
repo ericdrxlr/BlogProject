@@ -9,17 +9,19 @@ namespace BlogProject.Models
     public class Blog
     {
         public string Name { get; set; }
-        public int Id { get; set; }
+        public int BlogId { get; set; }
         public string Image { get; set; }
+
+        public virtual ICollection<Post> Posts { get; set; }
 
         public Blog()
         {
 
         }
-        public Blog(string name, int id, string image)
+        public Blog(string name, int blogId, string image)
         {
             Name = name;
-            Id = id;
+            BlogId = blogId;
             Image = image;
         }
     }

@@ -20,7 +20,7 @@ namespace BlogProject.Repositories
         }
         public Post GetById(int id)
         {
-            return db.Posts.Single(b => b.Id == id);
+            return db.Posts.Single(p => p.Id == id);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<BlogProject.Models.Blog>
 @{
     Layout = null;
 }
@@ -12,8 +12,13 @@
 </head>
 <body>
     <p>Choose which posts to see:</p>
-    <a href="">Blog Category 1</a>
-    <a href="#">Blog Category 2</a>
-    <a href="#">Blog Category 3</a>
+    <div>
+        @foreach (var blog in Model)
+        {
+            <p>@blog.Name</p>
+            <a href="/Blog/Posts/@blog.BlogId">Posts</a>
+        }
+
+    </div>
 </body>
 </html>

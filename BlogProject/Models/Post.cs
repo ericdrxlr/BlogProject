@@ -12,6 +12,9 @@ namespace BlogProject.Models
         public string Body { get; set; }
         public string Author { get; set; }
         public int PublishDate { get; set; }
+
+        public virtual Blog Blog { get; set; }
+        public virtual int BlogId { get; set; }
         public Post()
         {
 
