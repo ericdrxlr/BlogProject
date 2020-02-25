@@ -26,19 +26,19 @@ namespace BlogProject
             modelBuilder.Entity<Blog>().HasData(
                 new Blog()
                 {
-                    BlogId = 1,
+                    Id = 1,
                     Name = "Dream Log",
                     Image = "/img/dreaming.jpg"
                 },
                 new Blog()
                 {
-                    BlogId = 2,
+                    Id = 2,
                     Name = "Ziplining",
                     Image = "/img/zipline.jpg"
                 },
                 new Blog()
                 {
-                    BlogId = 3,
+                    Id = 3,
                     Name = "Exotic Pets",
                     Image = "/img/lizard.jpg"
                 }

@@ -24,7 +24,7 @@ namespace BlogProject.Repositories
         }
         public Blog GetById(int id)
         {
-            return db.Blogs.Single(b => b.BlogId == id);
+            return db.Blogs.Single(b => b.Id == id);
         }
         public void Create(Blog blog)
         {

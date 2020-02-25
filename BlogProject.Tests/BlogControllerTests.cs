@@ -12,10 +12,10 @@ namespace BlogProject.Tests
     {
         BlogController controller;
 
-        public BlogControllerTests()
-        {
-            controller = new BlogController();
-        }
+        //public BlogControllerTests()
+        //{
+        //    controller = new BlogController();
+        //}
 
         [Fact]
         public void Index_Returns_A_View()
