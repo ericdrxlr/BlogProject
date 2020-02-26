@@ -27,6 +27,7 @@ namespace BlogProject
         {
             services.AddMvc();
             services.AddDbContext<BlogContext>();
+            services.AddScoped<IRepository<Post>, PostRepository>();
             services.AddScoped<IRepository<Blog>, BlogRepository>();
         }
 
