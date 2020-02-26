@@ -11,10 +11,20 @@ namespace BlogProject.Controllers
     public class PostController : Controller
     {
         IRepository<Post> postRepo;
+        public PostController(IRepository<Post> postRepo)
+        {
+            this.postRepo = postRepo;
+        }
         public ViewResult Index()
         {
             var model = postRepo.GetAll();
             return View(model);
+        }
+        public ViewResult Posts(int id)
+        {
+            var model = postRepo.GetById(id);
+            return View(model);
+        
         }
     }
 }
