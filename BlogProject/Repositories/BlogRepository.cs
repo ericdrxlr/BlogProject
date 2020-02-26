@@ -18,6 +18,12 @@ namespace BlogProject.Repositories
         {
             return db.Blogs.Count();
         }
+
+        public void Create(Blog obj)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Blog> GetAll()
         {
             return db.Blogs;
@@ -26,10 +32,6 @@ namespace BlogProject.Repositories
         {
             return db.Blogs.Single(b => b.Id == id);
         }
-        public void Create(Blog blog)
-        {
-            db.Blogs.Add(blog);
-            db.SaveChanges();
-        }
+
     }
 }

@@ -14,6 +14,13 @@ namespace BlogProject.Repositories
         {
             this.db = db;
         }
+
+        public void Create(Post post)
+        {
+            db.Posts.Add(post);
+            db.SaveChanges();
+        }
+
         public IEnumerable<Post> GetAll()
         {
             return db.Posts;

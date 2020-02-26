@@ -24,7 +24,19 @@ namespace BlogProject.Controllers
         {
             var model = postRepo.GetById(id);
             return View(model);
-        
+
+        }
+        [HttpGet]
+        public ViewResult CreateByBlogId(int id)
+        {
+            ViewBag.BlogId = id;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(Post post)
+        {
+            postRepo.Create(post);
+            return RedirectToAction("Details", "Blog", new { id = post.BlogId });
         }
     }
 }
