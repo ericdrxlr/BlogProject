@@ -11,6 +11,14 @@
     <title>Posts</title>
 </head>
 <body>
-    <p>hi my name is josh</p>
+    <h1>Posts</h1>
+
+    @foreach(var post in Model.Posts)
+    {
+        <p>@post.Title</p>
+        <p>@post.Author</p>
+        <p>@post.Body</p>
+        <p>@post.PublishDate</p>
+    }
 </body>
 </html>
