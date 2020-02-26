@@ -11,7 +11,7 @@ namespace BlogProject.Models
         public string Title { get; set; }
         public string Body { get; set; }
         public string Author { get; set; }
-        public int PublishDate { get; set; }
+        public string PublishDate { get; set; }
 
         public virtual Blog Blog { get; set; }
         public virtual int BlogId { get; set; }
@@ -19,7 +19,7 @@ namespace BlogProject.Models
         {
 
         }
-        public Post(string title, string body, string author, int publishDate)
+        public Post(string title, string body, string author, string publishDate)
         {
             Title = title;
             Body = body;

@@ -21,7 +21,7 @@ namespace BlogProject.Controllers
             var model = blogRepo.GetAll();
             return View(model);
         }
-        public ViewResult Posts(int id)
+        public ViewResult Details(int id)
         {
             var model = blogRepo.GetById(id);
             return View(model);

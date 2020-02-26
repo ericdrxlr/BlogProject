@@ -43,6 +43,35 @@ namespace BlogProject
                     Image = "/img/lizard.jpg"
                 }
             );
+            modelBuilder.Entity<Post>().HasData(
+                new Post()
+                {
+                    Id = 1,
+                    Title = "That one time with the duck",
+                    Body = "There was a duck. It was weird.",
+                    Author = "Josh",
+                    PublishDate = "0",
+                    BlogId = 1
+                },
+                new Post()
+                {
+                    Id = 2,
+                    Title = "Ziplining in Hawaii",
+                    Body = "The best ziplining experience in the USA",
+                    Author = "Johnny",
+                    PublishDate = "12/20/2020",
+                    BlogId = 2
+                },
+                new Post()
+                {
+                    Id = 3,
+                    Title = "Please don't adopt a fox",
+                    Body = "Foxes are not domesticated pets. Adopt at your own risk.",
+                    Author = "Juniper",
+                    PublishDate = "2/4/2018",
+                    BlogId = 3
+                });
+
             base.OnModelCreating(modelBuilder);
         }
     }
