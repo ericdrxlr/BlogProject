@@ -34,5 +34,10 @@ namespace BlogProject.Repositories
             db.Posts.Update(post);
             db.SaveChanges();
         }
+        public void Delete(Post post)
+        {
+            db.Posts.Remove(post);
+            db.SaveChanges();
+        }
     }
 }

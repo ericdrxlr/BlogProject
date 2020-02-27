@@ -54,5 +54,22 @@ namespace BlogProject.Controllers
             postRepo.Update(post);
             return RedirectToAction("Details", "Blog", new { id = post.BlogId });
         }
+        [HttpGet]
+        public ViewResult Delete(int id)
+        {
+            Post model = postRepo.GetById(id);
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult Delete(Post post)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            var tempId = post.BlogId;
+            postRepo.Delete(post);
+            return RedirectToAction("Details", "Blog", new { id = tempId });
+        }
     }
 }

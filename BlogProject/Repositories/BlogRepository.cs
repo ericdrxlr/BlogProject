@@ -24,6 +24,11 @@ namespace BlogProject.Repositories
             throw new NotImplementedException();
         }
 
+        public void Delete(Blog obj)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Blog> GetAll()
         {
             return db.Blogs;
