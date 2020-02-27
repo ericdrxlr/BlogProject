@@ -38,5 +38,21 @@ namespace BlogProject.Controllers
             postRepo.Create(post);
             return RedirectToAction("Details", "Blog", new { id = post.BlogId });
         }
+        [HttpGet]
+        public ViewResult Update(int id)
+        {
+            Post model = postRepo.GetById(id);
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult Update(Post post)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            postRepo.Update(post);
+            return RedirectToAction("Details", "Blog", new { id = post.BlogId });
+        }
     }
 }

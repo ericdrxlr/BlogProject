@@ -29,5 +29,10 @@ namespace BlogProject.Repositories
         {
             return db.Posts.Single(p => p.Id == id);
         }
+        public void Update(Post post)
+        {
+            db.Posts.Update(post);
+            db.SaveChanges();
+        }
     }
 }

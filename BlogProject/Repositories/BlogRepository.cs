@@ -33,5 +33,9 @@ namespace BlogProject.Repositories
             return db.Blogs.Single(b => b.Id == id);
         }
 
+        public void Update(Blog obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
