@@ -34,13 +34,13 @@ namespace BlogProject
                 {
                     Id = 2,
                     Name = "Meditation",
-                    Image = "/img/zipline.jpg"
+                    Image = "/img/meditate.jpg"
                 },
                 new Blog()
                 {
                     Id = 3,
                     Name = "Yoga",
-                    Image = "/img/lizard.jpg"
+                    Image = "/img/yoga.jpg"
                 }
             );
             modelBuilder.Entity<Post>().HasData(
