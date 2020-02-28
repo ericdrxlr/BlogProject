@@ -14,7 +14,11 @@
     <title>Delete</title>
 </head>
 <body>
-
+    <nav>
+        <a href="/Home/Index">Home</a>
+        <a href="/Blog/Index">View Blogs</a>
+        <a href="/Home/Index/#about">content</a>
+    </nav>
     <h3>Are you sure you want to delete this?</h3>
     <div>
         <h4>Post</h4>
@@ -55,7 +59,7 @@
         <form asp-action="Delete">
             <input type="submit" value="Delete" class="btn btn-danger" />
             <input asp-for="BlogId" type="hidden" value=@Model.BlogId class="form-control" />
-            <a asp-action="Index">Back to List</a>
+            <a asp-action="Blog/Details/@Model.Id">Back to List</a>
         </form>
     </div>
 </body>
