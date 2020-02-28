@@ -1,4 +1,39 @@
-﻿body {
+﻿*{
+    box-sizing: border-box;
+}
+
+main{
+    text-align: center;
+}
+
+body {
     margin: 2em auto;
-    max-width: 500px;
+    max-width: 800px;
+    background-image: url(/img/blogbackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav {
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    nav a {
+        color: #CFB8A7;
+        text-decoration: none;
+        padding: .8em 1em;
+        margin: 0 2em;
+        background: rgba(8, 60, 79, 0.75);
+        border-radius: 12px;
+        width: 18%;
+        text-align: center;
+    }
+
+nav a:hover {
+    color: #000;
+    background: #fff
 }
