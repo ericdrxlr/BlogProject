@@ -1,0 +1,22 @@
+﻿@model BlogProject.Models.Post
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <p>@Model.Title</p>
+    <p>@Model.Author</p>
+    <p>@Model.Body</p>
+    <p>@Model.PublishDate</p>
+    <a href="/Post/Update/@Model.Id">Edit Post</a>
+    <a href="/Post/Delete/@Model.Id">Delete Post</a>
+    <a href="/Blog/Details/@Model.BlogId">Back to All Blog Posts</a>
+</body>
+</html>
