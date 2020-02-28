@@ -59,7 +59,7 @@
         <form asp-action="Delete">
             <input type="submit" value="Delete" class="btn btn-danger" />
             <input asp-for="BlogId" type="hidden" value=@Model.BlogId class="form-control" />
-            <a asp-action="Blog/Details/@Model.Id">Back to List</a>
+            <a href="~/Post/Details/@Model.Id">Back to List</a>
         </form>
     </div>
 </body>
