@@ -11,6 +11,17 @@
     <title>Posts</title>
 </head>
 <body>
-    <p>hi my name is josh</p>
+    <h1>Posts</h1>
+
+    @foreach(var post in Model.Posts)
+    {
+        <p>@post.Title</p>
+        <p>@post.Author</p>
+        <p>@post.Body</p>
+        <p>@post.PublishDate</p>
+        <a href="/Post/Update/@post.Id">Edit Post</a>
+        <a href="/Post/Delete/@post.Id">Delete Post</a>
+    }
+    <a href="/Post/CreateByBlogId/@Model.Id">Make A New Post</a>
 </body>
 </html>
