@@ -33,13 +33,13 @@ namespace BlogProject
                 new Blog()
                 {
                     Id = 2,
-                    Name = "Ziplining",
+                    Name = "Meditation",
                     Image = "/img/zipline.jpg"
                 },
                 new Blog()
                 {
                     Id = 3,
-                    Name = "Exotic Pets",
+                    Name = "Yoga",
                     Image = "/img/lizard.jpg"
                 }
             );
@@ -50,14 +50,14 @@ namespace BlogProject
                     Title = "That one time with the duck",
                     Body = "There was a duck. It was weird.",
                     Author = "Josh",
-                    PublishDate = "0",
+                    PublishDate = "2/20/2020",
                     BlogId = 1
                 },
                 new Post()
                 {
                     Id = 2,
-                    Title = "Ziplining in Hawaii",
-                    Body = "The best ziplining experience in the USA",
+                    Title = "My Collection of Crystals",
+                    Body = "I recommend amethyst for your salt baths to add positive energy to your relaxation experience.",
                     Author = "Johnny",
                     PublishDate = "12/20/2020",
                     BlogId = 2
@@ -65,8 +65,8 @@ namespace BlogProject
                 new Post()
                 {
                     Id = 3,
-                    Title = "Please don't adopt a fox",
-                    Body = "Foxes are not domesticated pets. Adopt at your own risk.",
+                    Title = "Want to step into the world of yoga?",
+                    Body = "Come to my yoga classes on wednesdays at 3 pm!",
                     Author = "Juniper",
                     PublishDate = "2/4/2018",
                     BlogId = 3
