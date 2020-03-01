@@ -15,6 +15,7 @@ namespace BlogProject.Models
 
         public virtual Blog Blog { get; set; }
         public virtual int BlogId { get; set; }
+        public virtual List<PostTag> PostTags { get; set; }
         public Post()
         {
 
