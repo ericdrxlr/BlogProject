@@ -25,10 +25,15 @@
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 @*<div class="form-group">
-                        <label asp-for="Id" class="control-label"></label>
-                        <input asp-for="Id" class="form-control" />
-                        <span asp-validation-for="Id" class="text-danger"></span>
-                    </div>*@
+            <label asp-for="Id" class="control-label"></label>
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>*@
+                <div class="form-group">
+                    <label asp-for="Author" class="control-label"></label>
+                    <input asp-for="Author" class="form-control" />
+                    <span asp-validation-for="Author" class="text-danger"></span>
+                </div>
                 <div class="form-group">
                     <label asp-for="Title" class="control-label"></label>
                     <input asp-for="Title" class="form-control" />
@@ -40,10 +45,24 @@
                     <span asp-validation-for="Body" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Author" class="control-label"></label>
-                    <input asp-for="Author" class="form-control" />
-                    <span asp-validation-for="Author" class="text-danger"></span>
-                </div>
+                    <p>Tags</p>
+                    <select name="Tag Options">
+                        <option value="0">--Select One--</option>
+                        <option value="1">relaxing</option>
+                        <option value="2">subconscious</option>
+                        <option value="3">mindful</option>
+                        <option value="4">zen</option>
+                    </select>
+                    <select name="Tag Options">
+                        <option value="0">--Select One--</option>
+                        <option value="1">relaxing</option>
+                        <option value="2">subconscious</option>
+                        <option value="3">mindful</option>
+                        <option value="4">zen</option>
+                    </select>
+                    <input asp-for="PostTags" class="form-control" />
+                    <span asp-validation-for="Body" class="text-danger"></span>
+                </div><br>
                 <div class="form-group">
                     <label asp-for="PublishDate" class="control-label"></label>
                     <input asp-for="PublishDate" class="form-control" />
