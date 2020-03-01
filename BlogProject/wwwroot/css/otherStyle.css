@@ -1,0 +1,76 @@
+﻿* {
+    box-sizing: border-box;
+    line-height: 1.618em;
+}
+
+body {
+    margin: 2em auto;
+    max-width: 850px;
+    background-image: url(/img/blogbackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1, h2 {
+    font-family: "Caladea";
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    color: #CFB8A7;
+    text-decoration: none;
+    padding: .8em 1em;
+    margin: 0 2em;
+    background: rgba(8, 60, 79, 0.75);
+    border-radius: 12px;
+    width: 18%;
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+#blogCategories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3em;
+}
+
+#blogDetails {
+    background-color: rgba(101, 105, 106, 0.75);
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 12px;
+    color: whitesmoke;
+    padding: 1em;
+    font-family: "Tenali Ramakrishna";
+    font-size: 18px;
+    text-align: center;
+}
+
+article {
+    background-color: rgba(101, 105, 106, 0.75);
+    width: 40%;
+    margin-top: 40px;
+    border-radius: 12px;
+    color: whitesmoke;
+    padding: 1em;
+    font-family: "Tenali Ramakrishna";
+    font-size: 18px;
+}
+
+a{
+
+}

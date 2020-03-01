@@ -9,6 +9,8 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="~/css/otherStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Tenali+Ramakrishna&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -16,12 +18,15 @@
         <a href="/Blog/Index">View Blogs</a>
         <a href="/Home/Index/#about">content</a>
     </nav>
-    <p>Choose which posts to see:</p>
-    <div>
+    <h2>Choose which posts to see:</h2>
+    <div id="blogCategories">
         @foreach (var blog in Model)
         {
+        <article id="blogDetails">
+            <a href="/Blog/Details/@blog.Id"><img src="@blog.Image" alt="Blog Image" /></a>
             <p>@blog.Name</p>
-            <a href="/Blog/Details/@blog.Id">Posts</a>
+            @*<a href="/Blog/Details/@blog.Id">Posts</a>*@
+        </article>
         }
 
     </div>
