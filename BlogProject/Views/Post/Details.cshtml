@@ -19,6 +19,11 @@
     <p>@Model.Title</p>
     <p>@Model.Author</p>
     <p>@Model.Body</p>
+    
+    @foreach (var tag in Model.PostTags)
+        { 
+            <p>#@tag.Tag.Name</p>
+         }
     <p>@Model.PublishDate</p>
     <a href="/Post/Update/@Model.Id">Edit Post</a>
     <a href="/Post/Delete/@Model.Id">Delete Post</a>
