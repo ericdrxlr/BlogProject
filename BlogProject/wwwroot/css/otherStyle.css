@@ -71,6 +71,13 @@ article {
     font-size: 18px;
 }
 
-a{
+a {
+    color: whitesmoke;
+    font-family: "Tenali Ramakrishna";
+}
 
+#newPost{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }

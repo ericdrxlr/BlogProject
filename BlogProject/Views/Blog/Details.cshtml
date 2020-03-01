@@ -13,12 +13,11 @@
 
 </head>
 <body>
-    <h1>Posts</h1>
     <nav>
         <a href="/Home/Index">Home</a>
         <a href="/Blog/Index">View Blogs</a>
-        <a href="/Home/Index/#about">content</a>
     </nav>
+    <h1>Posts</h1>
     <div>
         @foreach (var post in Model.Posts)
         {
@@ -30,6 +29,6 @@
         </article>
         }
     </div>
-    <a href="/Post/CreateByBlogId/@Model.Id">Make A New Post</a>
+    <a id="newPost" href="/Post/CreateByBlogId/@Model.Id">Make A New Post</a>
 </body>
 </html>

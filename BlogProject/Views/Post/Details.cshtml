@@ -9,24 +9,26 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Details</title>
+    <link href="~/css/otherStyle.css" rel="stylesheet" />
 </head>
 <body>
     <nav>
         <a href="/Home/Index">Home</a>
         <a href="/Blog/Index">View Blogs</a>
-        <a href="/Home/Index/#about">content</a>
     </nav>
-    <p>@Model.Title</p>
-    <p>@Model.Author</p>
-    <p>@Model.Body</p>
-    
-    @foreach (var tag in Model.PostTags)
-        { 
+    <article>
+        <h1>@Model.Title</h1>
+        <p>Author: @Model.Author</p>
+        <p>Body: @Model.Body</p>
+
+        @foreach (var tag in Model.PostTags)
+        {
             <p>#@tag.Tag.Name</p>
-         }
-    <p>@Model.PublishDate</p>
-    <a href="/Post/Update/@Model.Id">Edit Post</a>
-    <a href="/Post/Delete/@Model.Id">Delete Post</a>
+        }
+        <p>@Model.PublishDate</p>
+        <a href="/Post/Update/@Model.Id">Edit Post</a>
+        <a href="/Post/Delete/@Model.Id">Delete Post</a>
+    </article>
     <a href="/Blog/Details/@Model.BlogId">Back to All Blog Posts</a>
 </body>
 </html>
