@@ -22,8 +22,8 @@
         @foreach (var post in Model.Posts)
         {
         <article>
-            <p>@post.Title</p>
-            <p>@post.Author</p>
+            <p>Title: @post.Title</p>
+            <p>Author: @post.Author</p>
             <p>@post.PublishDate</p>
             <a href="/Post/Details/@post.Id">View Post</a>
         </article>

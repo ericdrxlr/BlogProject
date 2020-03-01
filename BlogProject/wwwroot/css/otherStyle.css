@@ -81,3 +81,29 @@ a {
     bottom: 20px;
     right: 20px;
 }
+
+.formContainer {
+    text-align: center;
+    background-color: rgba(101, 105, 106, 0.75);
+    margin: 2em 15vw;
+    padding: 1em;
+    border-radius: 12px;
+    color: whitesmoke;
+    font-family: "Tenali Ramakrishna";
+}
+
+#postDetails {
+    background-color: rgba(101, 105, 106, 0.75);
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 12px;
+    color: whitesmoke;
+    padding: 1em;
+    font-family: "Tenali Ramakrishna";
+    font-size: 18px;
+}
+
+.deleteGroup, dt, dd{
+    text-align: left;
+    
+}
