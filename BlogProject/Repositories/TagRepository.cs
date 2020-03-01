@@ -31,7 +31,7 @@ namespace BlogProject.Repositories
 
         public Tag GetById(int id)
         {
-            throw new NotImplementedException();
+            return db.Tags.Single(t => t.Id == id);
         }
 
         public void Update(Tag obj)

@@ -52,7 +52,7 @@ namespace BlogProject
                     Title = "That one time with the duck",
                     Body = "There was a duck. It was weird.",
                     Author = "Josh",
-                    PublishDate = "2/20/2020",
+                    PublishDate = DateTime.Now,
                     BlogId = 1
                 },
                 new Post()
@@ -61,7 +61,7 @@ namespace BlogProject
                     Title = "My Collection of Crystals",
                     Body = "I recommend amethyst for your salt baths to add positive energy to your relaxation experience.",
                     Author = "Johnny",
-                    PublishDate = "12/20/2020",
+                    PublishDate = DateTime.Now,
                     BlogId = 2
                 },
                 new Post()
@@ -70,7 +70,7 @@ namespace BlogProject
                     Title = "Want to step into the world of yoga?",
                     Body = "Come to my yoga classes on wednesdays at 3 pm!",
                     Author = "Juniper",
-                    PublishDate = "2/4/2018",
+                    PublishDate = DateTime.Now,
                     BlogId = 3
                 },
                 new Post()
@@ -79,7 +79,7 @@ namespace BlogProject
                     Title = "Flying",
                     Body = "All my life, I had been terrified of flying. The concept of getting into a plane and traveling at high speeds for multiple hours made me feel sick to my stomach. But last night, I had a dream that I floated up into the clouds above the city. The buildings and roads looked beautiful from above. It was initially gut-wrenching, but the sensation of floating has convinced me that I need to see what the world looks like from the window of an airplane. I have a flight booked to New York City tomorrow.",
                     Author = "Ben",
-                    PublishDate = "2/29/2020",
+                    PublishDate = DateTime.Now,
                     BlogId = 1
                 },
                 new Post()
@@ -88,7 +88,7 @@ namespace BlogProject
                     Title = "What Is Meditation?",
                     Body = "I found a great resource online explaining exactly what meditation is and how it can help you in your everyday lives. You can check it out at this link here: https://mindworks.org/blog/meditation-definition/",
                     Author = "Ben",
-                    PublishDate = "2/29/2020",
+                    PublishDate = DateTime.Now,
                     BlogId = 2
                 },
                 new Post()
@@ -97,7 +97,7 @@ namespace BlogProject
                     Title = "My experience with yoga at We Can Code IT",
                     Body = "I spent a half hour in the afternoon doing yoga in the zen room with some friends. It was hard at first because I'm horribly out of shape, but at the end of the session I felt refreshed and happy. I highly recommend getting into yoga if you haven't already.",
                     Author = "Josh",
-                    PublishDate = "3/1/2020",
+                    PublishDate = DateTime.Now,
                     BlogId = 3
                 }
                 );
