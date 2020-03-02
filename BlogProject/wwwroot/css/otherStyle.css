@@ -80,10 +80,15 @@ img{
     }
 #one {
     background-color: rgb(7, 60, 79);
+    color: white;
 }
 #two {
     background-color: rgb(255,228,150);
     color: black;
+}
+div > a {
+    font-size:22px;
+    color: indigo;
 }
 
 a {
