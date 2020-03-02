@@ -63,23 +63,28 @@ img{
 }
 
 .postdetail {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 50px;
     
 }
     .postdetail > div {
         padding: 20px;
         background-color: rgba(101, 105, 106, 1);
         width: 40%;
-        border-style: solid;
-        border-color: black;
-        border-radius: 12px;
-        color: whitesmoke;
         padding: 1em;
         font-family: "Caladea";
         font-size: 18px;
+        box-shadow: 0px 0px 20px 0px;
     }
+#one {
+    background-color: rgb(7, 60, 79);
+}
+#two {
+    background-color: rgb(255,228,150);
+    color: black;
+}
 
 a {
     color: whitesmoke;

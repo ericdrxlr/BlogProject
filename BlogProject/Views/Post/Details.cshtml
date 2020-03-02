@@ -18,24 +18,8 @@
         <a href="/Home/Index">Home</a>
         <a href="/Blog/Index">View Blogs</a>
     </nav>
-    <article id="postDetails">
-        <h1>@Model.Title</h1>
-        <p>Author: @Model.Author</p>
-        <p>Body: @Model.Body</p>
-
-        @foreach (var tag in Model.PostTags)
-        {
-            <p>#@tag.Tag.Name</p>
-        }
-        <p>@Model.PublishDate</p>
-        <a href="/Post/Update/@Model.Id">Edit Post</a>
-        <a href="/Post/Delete/@Model.Id">Delete Post</a>
-    </article>
-    <a href="/Blog/Details/@Model.BlogId">Back to All Blog Posts</a>
-
-
     <article class="postdetail">
-        <div>
+        <div id="one">
             <h1>@Model.Title</h1>
             <p>Author: @Model.Author</p>
             @foreach (var tag in Model.PostTags)
@@ -44,7 +28,7 @@
             }
             <p>@Model.PublishDate</p>
         </div>
-        <div>
+        <div id="two">
             <p>Body: @Model.Body</p>
             <a href="/Post/Update/@Model.Id">Edit Post</a>
             <a href="/Post/Delete/@Model.Id">Delete Post</a>
