@@ -1,0 +1,137 @@
+﻿* {
+    box-sizing: border-box;
+    line-height: 1.618em;
+}
+
+body {
+    margin: 2em auto;
+    max-width: 850px;
+    background-image: url(/img/blogbackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1, h2 {
+    font-family: "Caladea";
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    color: #CFB8A7;
+    text-decoration: none;
+    padding: .35em .9em;
+    margin: 0 2em;
+    background: rgba(8, 60, 79, 0.75);
+    border-radius: 12px;
+    width: 18%;
+    text-align: center;
+    font-size: 25px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+#blogCategories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3em;
+}
+
+#blogDetails {
+    background-color: rgba(101, 105, 106, 0.75);
+    width: 100%;
+    margin-top: 40px;
+    margin: 20px;
+    border-radius: 12px;
+    color: whitesmoke;
+    padding: 1em;
+    font-family: "Tenali Ramakrishna";
+    font-size: 18px;
+    text-align: center;
+}
+
+.postdetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+    .postdetail > div {
+        padding: 20px;
+        background-color: rgba(101, 105, 106, 1);
+        width: 40%;
+        padding: 1em;
+        font-family: "Caladea";
+        font-size: 18px;
+        box-shadow: 0px 0px 20px 0px;
+    }
+#one {
+    background-color: rgb(7, 60, 79);
+}
+#two {
+    background-color: rgb(255,228,150);
+    color: black;
+}
+
+a {
+    color: whitesmoke;
+    font-family: "Tenali Ramakrishna";
+}
+
+#newPost{
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    font-size: 25px;
+}
+
+.formContainer {
+    text-align: center;
+    background-color: rgba(101, 105, 106, 0.75);
+    margin: 2em 15vw;
+    padding: 1em;
+    border-radius: 12px;
+    color: whitesmoke;
+    font-family: "Caladea";
+}
+
+#postDetails {
+    background-color: rgba(101, 105, 106, 0.75);
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 12px;
+    color: whitesmoke;
+    padding: 1em;
+    font-family: "Caladea";
+    font-size: 18px;
+}
+.postdetails {
+    background-color: rgba(101, 105, 106, 0.75);
+    width: 40%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 12px;
+    color: whitesmoke;
+    padding: 1em;
+    font-family: "Caladea";
+    font-size: 18px;
+}
+
+.deleteGroup, dt, dd{
+    text-align: left;
+    
+}
+

@@ -1,0 +1,36 @@
+﻿@model BlogProject.Models.Blog
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Posts</title>
+    <link href="~/css/otherStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Tenali+Ramakrishna&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <a href="/Home/Index">Home</a>
+        <a href="/Blog/Index">View Blogs</a>
+    </nav>
+    <h1>@Model.Name Posts</h1>
+    <div>
+        @foreach (var post in Model.Posts)
+        {
+        <article class="postdetails">
+            <p>Title: @post.Title</p>
+            <p>Author: @post.Author</p>
+            <p>@post.PublishDate</p>
+            <a href="/Post/Details/@post.Id">View Post</a>
+        </article>
+        }
+    </div>
+    <a id="newPost" href="/Post/CreateByBlogId/@Model.Id">Make A New Post</a>
+
+</body>
+</html>

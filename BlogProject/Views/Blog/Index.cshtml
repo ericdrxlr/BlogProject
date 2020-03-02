@@ -1,0 +1,33 @@
+﻿@model IEnumerable<BlogProject.Models.Blog>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/css/otherStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Tenali+Ramakrishna&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="/Home/Index">Home</a>
+        <a href="/Blog/Index">View Blogs</a>
+    </nav>
+    <h2>Choose your mood:</h2>
+    <div id="blogCategories">
+        @foreach (var blog in Model)
+        {
+        <article id="blogDetails">
+            <a href="/Blog/Details/@blog.Id"><img src="@blog.Image" alt="Blog Image" /></a>
+            <h3>@blog.Name</h3>
+            @*<a href="/Blog/Details/@blog.Id">Posts</a>*@
+        </article>
+        }
+
+    </div>
+</body>
+</html>
