@@ -11,38 +11,61 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>CreateByBlogId</title>
+    <link href="~/css/otherStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Tenali+Ramakrishna&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-
+    <nav>
+        <a href="/Home/Index">Home</a>
+        <a href="/Blog/Index">View Blogs</a>
+    </nav>
     <h4>Post</h4>
     <hr />
     <div class="row">
         <div class="col-md-4">
-            <form asp-action="Create">
+            <form class="formContainer" asp-action="Create" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 @*<div class="form-group">
-                    <label asp-for="Id" class="control-label"></label>
-                    <input asp-for="Id" class="form-control" />
-                    <span asp-validation-for="Id" class="text-danger"></span>
-                </div>*@
+            <label asp-for="Id" class="control-label"></label>
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>*@
                 <div class="form-group">
-                    <label asp-for="Title" class="control-label"></label>
-                    <input asp-for="Title" class="form-control" />
-                    <span asp-validation-for="Title" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Body" class="control-label"></label>
-                    <input asp-for="Body" class="form-control" />
-                    <span asp-validation-for="Body" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Author" class="control-label"></label>
+                    <p>Author</p>
                     <input asp-for="Author" class="form-control" />
                     <span asp-validation-for="Author" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="PublishDate" class="control-label"></label>
-                    <input asp-for="PublishDate" class="form-control" />
+                    <p>Title</p>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <p>Post</p>
+                    <textarea asp-for="Body" class="form-control" cols="30" rows="10"></textarea>
+                    <span asp-validation-for="Body" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <p>Tags</p>
+                    <select name="Tag Options">
+                        <option value="0">--Select One--</option>
+                        <option value="1">relaxing</option>
+                        <option value="2">subconscious</option>
+                        <option value="3">mindful</option>
+                        <option value="4">zen</option>
+                    </select>
+                    <select name="Tag Options">
+                        <option value="0">--Select One--</option>
+                        <option value="1">relaxing</option>
+                        <option value="2">subconscious</option>
+                        <option value="3">mindful</option>
+                        <option value="4">zen</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <input asp-for="PublishDate" type="hidden" class="form-control" />
                     <span asp-validation-for="PublishDate" class="text-danger"></span>
                 </div>
                 <div class="form-group">
@@ -57,7 +80,7 @@
     </div>
 
     <div>
-        <a asp-action="Index">Back to List</a>
+        <a href="~/Blog/Details/@ViewBag.BlogId">Back to List</a>
     </div>
 
 </body>

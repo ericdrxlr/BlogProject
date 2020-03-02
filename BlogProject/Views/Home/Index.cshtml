@@ -9,16 +9,26 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="~/css/homeStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Tenali+Ramakrishna&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Welcome to our site!</h1>
-    <h2>About Us</h2>
-    <p>information</p>
-
-    <a href="/Blog/Index">View Blogs</a>
+    <main>
+        <h1>Welcome to Thought Forest!</h1>
+        <p>Expand your boundaries. Tell the world about it.</p>
+    </main>
 
     <nav>
-
+        @*<a href="/Home/Index">Home</a>*@
+        <a href="/Blog/Index" id="viewblogs">View Blogs</a>
+        @*<a href="/Home/Index/#about">About Us</a>*@
     </nav>
+    <div id="about">
+        <h2>About Us</h2>
+        <p>
+            Thought Forest is a blog website dedicated to sharing your experiences and getting in touch with your inner self. Your stories are beautiful, insightful, and fascinating, and we want you to tell the world about them.
+        </p>
+    </div>
 </body>
 </html>

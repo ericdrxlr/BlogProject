@@ -1,0 +1,53 @@
+﻿*{
+    box-sizing: border-box;
+    line-height: .9em;
+}
+
+main {
+    text-align: center;
+    font-family: "Caladea";
+}
+
+body {
+    margin: 2em auto;
+    max-width: 850px;
+    background-image: url(/img/blogbackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    nav a {
+        color: #CFB8A7;
+        text-decoration: none;
+        padding: .8em 1em;
+        margin: 50px 2em;
+        background: rgba(8, 60, 79, 0.75);
+        border-radius: 12px;
+        width: 18%;
+        text-align: center;
+
+    }
+
+#about {
+    background-color: rgba(101, 105, 106, 0.75);
+    width: 35%;
+    margin-top: 40px;
+    border-radius: 12px;
+    color: whitesmoke;
+    padding: 1em;
+    font-family: "Tenali Ramakrishna";
+}
+    #about p {
+        font-size: 18px;
+    }
+nav a:hover {
+    color: #000;
+    background: #fff
+}
