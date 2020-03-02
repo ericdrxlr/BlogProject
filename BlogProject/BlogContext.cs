@@ -99,6 +99,15 @@ namespace BlogProject
                     Author = "Josh",
                     PublishDate = DateTime.Now,
                     BlogId = 3
+                },
+                new Post()
+                {
+                    Id = 7,
+                    Title = "Test",
+                    Body = "test",                   
+                    Author = "Josh",
+                    PublishDate = DateTime.Now,
+                    BlogId = 3
                 }
                 );
             modelBuilder.Entity<Tag>().HasData(

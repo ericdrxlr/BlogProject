@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Posts</title>
     <link href="~/css/otherStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Tenali+Ramakrishna&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -17,11 +18,11 @@
         <a href="/Home/Index">Home</a>
         <a href="/Blog/Index">View Blogs</a>
     </nav>
-    <h1>Posts</h1>
+    <h1>@Model.Name Posts</h1>
     <div>
         @foreach (var post in Model.Posts)
         {
-        <article>
+        <article class="postdetails">
             <p>Title: @post.Title</p>
             <p>Author: @post.Author</p>
             <p>@post.PublishDate</p>

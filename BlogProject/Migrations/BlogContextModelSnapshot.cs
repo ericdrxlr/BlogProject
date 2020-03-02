@@ -92,7 +92,7 @@ namespace BlogProject.Migrations
                             Author = "Josh",
                             BlogId = 1,
                             Body = "There was a duck. It was weird.",
-                            PublishDate = new DateTime(2020, 3, 1, 15, 14, 29, 150, DateTimeKind.Local).AddTicks(2305),
+                            PublishDate = new DateTime(2020, 3, 1, 17, 40, 54, 223, DateTimeKind.Local).AddTicks(1116),
                             Title = "That one time with the duck"
                         },
                         new
@@ -101,7 +101,7 @@ namespace BlogProject.Migrations
                             Author = "Johnny",
                             BlogId = 2,
                             Body = "I recommend amethyst for your salt baths to add positive energy to your relaxation experience.",
-                            PublishDate = new DateTime(2020, 3, 1, 15, 14, 29, 152, DateTimeKind.Local).AddTicks(9919),
+                            PublishDate = new DateTime(2020, 3, 1, 17, 40, 54, 228, DateTimeKind.Local).AddTicks(7486),
                             Title = "My Collection of Crystals"
                         },
                         new
@@ -110,7 +110,7 @@ namespace BlogProject.Migrations
                             Author = "Juniper",
                             BlogId = 3,
                             Body = "Come to my yoga classes on wednesdays at 3 pm!",
-                            PublishDate = new DateTime(2020, 3, 1, 15, 14, 29, 152, DateTimeKind.Local).AddTicks(9970),
+                            PublishDate = new DateTime(2020, 3, 1, 17, 40, 54, 228, DateTimeKind.Local).AddTicks(7557),
                             Title = "Want to step into the world of yoga?"
                         },
                         new
@@ -119,7 +119,7 @@ namespace BlogProject.Migrations
                             Author = "Ben",
                             BlogId = 1,
                             Body = "All my life, I had been terrified of flying. The concept of getting into a plane and traveling at high speeds for multiple hours made me feel sick to my stomach. But last night, I had a dream that I floated up into the clouds above the city. The buildings and roads looked beautiful from above. It was initially gut-wrenching, but the sensation of floating has convinced me that I need to see what the world looks like from the window of an airplane. I have a flight booked to New York City tomorrow.",
-                            PublishDate = new DateTime(2020, 3, 1, 15, 14, 29, 152, DateTimeKind.Local).AddTicks(9976),
+                            PublishDate = new DateTime(2020, 3, 1, 17, 40, 54, 228, DateTimeKind.Local).AddTicks(7565),
                             Title = "Flying"
                         },
                         new
@@ -128,7 +128,7 @@ namespace BlogProject.Migrations
                             Author = "Ben",
                             BlogId = 2,
                             Body = "I found a great resource online explaining exactly what meditation is and how it can help you in your everyday lives. You can check it out at this link here: https://mindworks.org/blog/meditation-definition/",
-                            PublishDate = new DateTime(2020, 3, 1, 15, 14, 29, 152, DateTimeKind.Local).AddTicks(9980),
+                            PublishDate = new DateTime(2020, 3, 1, 17, 40, 54, 228, DateTimeKind.Local).AddTicks(7569),
                             Title = "What Is Meditation?"
                         },
                         new
@@ -137,8 +137,17 @@ namespace BlogProject.Migrations
                             Author = "Josh",
                             BlogId = 3,
                             Body = "I spent a half hour in the afternoon doing yoga in the zen room with some friends. It was hard at first because I'm horribly out of shape, but at the end of the session I felt refreshed and happy. I highly recommend getting into yoga if you haven't already.",
-                            PublishDate = new DateTime(2020, 3, 1, 15, 14, 29, 152, DateTimeKind.Local).AddTicks(9983),
+                            PublishDate = new DateTime(2020, 3, 1, 17, 40, 54, 228, DateTimeKind.Local).AddTicks(7572),
                             Title = "My experience with yoga at We Can Code IT"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Author = "Josh",
+                            BlogId = 3,
+                            Body = "test",
+                            PublishDate = new DateTime(2020, 3, 1, 17, 40, 54, 228, DateTimeKind.Local).AddTicks(7578),
+                            Title = "Test"
                         });
                 });
 

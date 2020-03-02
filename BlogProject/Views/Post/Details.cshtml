@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>Details</title>
     <link href="~/css/otherStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Tenali+Ramakrishna&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav>
@@ -28,6 +30,26 @@
         <p>@Model.PublishDate</p>
         <a href="/Post/Update/@Model.Id">Edit Post</a>
         <a href="/Post/Delete/@Model.Id">Delete Post</a>
+    </article>
+    <a href="/Blog/Details/@Model.BlogId">Back to All Blog Posts</a>
+
+
+    <article class="postdetail">
+        <div>
+            <h1>@Model.Title</h1>
+            <p>Author: @Model.Author</p>
+            @foreach (var tag in Model.PostTags)
+            {
+                <p>#@tag.Tag.Name</p>
+            }
+            <p>@Model.PublishDate</p>
+        </div>
+        <div>
+            <p>Body: @Model.Body</p>
+            <a href="/Post/Update/@Model.Id">Edit Post</a>
+            <a href="/Post/Delete/@Model.Id">Delete Post</a>
+        </div>
+        
     </article>
     <a href="/Blog/Details/@Model.BlogId">Back to All Blog Posts</a>
 </body>
